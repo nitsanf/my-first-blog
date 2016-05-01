@@ -3,19 +3,10 @@
         <title>Nitsan's blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p><b>turtles!</b></p>
-        <p><strong>TURTLES</strong>
-    </body></p>
-    <div>
-      {%for post in posts%}
-      {{post}}
-      {% endfor %}
-    </div>
 
     <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+      <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
 
 {% for post in posts %}
     <div>
@@ -24,4 +15,5 @@
         <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endfor %}
+</body>
 </html>
